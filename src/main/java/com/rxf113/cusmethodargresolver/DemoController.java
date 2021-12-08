@@ -22,7 +22,7 @@ public class DemoController {
      */
     @PostMapping("/rxf113")
     @ResponseBody
-    public Object setCurrentTime(@Rxf113(value = "name") List<String> name, @Rxf113(value = "age") Integer age) {
+    public Object testParam(@Rxf113(value = "name") List<String> name, @Rxf113(value = "age") Integer age) {
         System.out.println("name: " + name + "  " + "age: " + age);
         return "success!";
     }
